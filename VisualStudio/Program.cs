@@ -6,8 +6,7 @@ namespace VisualStudio
     {
         static void Main(string[] args)
         {
-            string greeting = "Hello Jelmarose!";
-            Console.WriteLine(greeting);
+            Console.WriteLine("Greetings!");
         }
     }
 }
