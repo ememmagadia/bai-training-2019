@@ -6,12 +6,11 @@ namespace VisualStudio
 {
     public class Service
     {
-        public string GetName(string name)
-        {
-
-            var x = mame + "hello";
+        public string GetName(string name) {
+            
+            var x = name + "hello";
             return x;
-
-        }
+            
+    }
     }
 }

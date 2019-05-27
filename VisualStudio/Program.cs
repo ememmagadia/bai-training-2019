@@ -6,8 +6,8 @@ namespace VisualStudio
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Greetings!");
-            Console.WriteLine("Another console log");
+            
+           
         }
     }
 }
