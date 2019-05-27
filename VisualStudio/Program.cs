@@ -7,7 +7,7 @@ namespace VisualStudio
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Dude!");
-            Console.WriteLine("Hello Man!");
+            Console.WriteLine("Hello NOO!");
         }
     }
 }
