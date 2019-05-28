@@ -1,36 +1,42 @@
 ﻿using System;
 
-namespace VisualStudio
+namespace Foobar
 {
     class Program
     {
         static void Main(string[] args)
         {
             int Num1 = 0;
-            char again = 'y';
+            string ans;
+            string again = "n";
             do
             {
                 do
                 {
                     Console.Write("Input Number:");
+                    ans = Console.ReadLine();
 
-                    try
+                    if (int.TryParse(ans, out Num1))
                     {
-                        Num1 = int.Parse(Console.ReadLine());
+                        if (Num1<0)
+                        {
+                            Console.WriteLine("Only Positive Numbers!");
+                        }
+                        else
+                        {
+                            Console.WriteLine(Foobar(Num1));
+                        }        
                     }
-                    catch
+                    else
                     {
                         Console.WriteLine("Please input a number!");
                     }
-
-                    if (Num1 < 0) Console.WriteLine("Only positive numbers!");
                 }
                 while (Num1 < 0);
-
-
-
+                Console.WriteLine("Do you want to try again? (Y/y to try again)");
+                again = Console.ReadLine();
             }
-            while (again == 'y' || again == 'Y');
+            while (again == "y" || again == "Y");
         }
 
         public static string Foobar(int a)
