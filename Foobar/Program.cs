@@ -15,40 +15,34 @@ namespace Foobar
                 if (Number == 0)
                 {
                     Console.WriteLine("FOOBAR");
-                    Console.ReadKey();
                 }
                 else if (Number < 0)
                 {
                     Console.WriteLine("Please Greater Than zero");
-                    Console.ReadKey();
                 }
                 else if (Number % 15 == 0)
                 {
                     Console.WriteLine("FOOBAR");
-                    Console.ReadKey();
                 }
                 else if (Number % 3 == 0)
                 {
                     Console.WriteLine("FOO");
-                    Console.ReadKey();
 
                 }
                 else if (Number % 5 == 0)
                 {
                     Console.WriteLine("BAR");
-                    Console.ReadKey();
-
+                  
                 }
                 else
                 {
                     Console.WriteLine(Num1);
-                    Console.ReadKey();
                 }
             }
             else
             {
                 Console.WriteLine("Please input  number");
-                Console.ReadKey();
+               
             }
             return Num1;
         }
@@ -64,6 +58,7 @@ namespace Foobar
                 n.Number(Input);
                 i++;
                }
+            Console.ReadKey();
 
         }
     }
