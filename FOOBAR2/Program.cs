@@ -1,8 +1,9 @@
 ﻿using System;
+using FooBar;
 
- namespace FooBar
+namespace FOOBAR2
 {
-	public class Program
+	class Program
 	{
 		public static void Main()
 		{
@@ -17,7 +18,10 @@
 					num = Convert.ToInt32(value);
 					if (num >= 0)
 					{
-						foobar(num);
+						for (int i = 1; i <= num; i++)
+						{
+							FooBar.Program.foobar(i);
+						}
 
 						Console.Write("Do you want to try again?? Y/N : ");
 						again = Console.ReadLine();
@@ -27,41 +31,14 @@
 						Console.WriteLine("The number is less than 0.");
 						again = "Y";
 					}
-
-
 				}
-
 				else
 				{
 					Console.WriteLine("Please enter a number.");
 					again = "Y";
 				}
-
 			}
-
 			Console.ReadKey();
-
-		}
-
-		public static void foobar(int num)
-		{
-			 if ((num % 5 == 0) && (num % 3 == 0))
-			{
-				Console.WriteLine("FOOBAR");
-			}
-			else if(num % 3 == 0)
-			{
-				Console.WriteLine("FOO");
-			}
-			else if (num % 5 == 0)
-			{
-				Console.WriteLine("BAR");
-			}
-			
-			else if ((num % 3 != 0) && (num % 5 != 0))
-			{
-				Console.WriteLine(num);
-			}
 		}
 	}
 }
