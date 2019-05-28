@@ -19,7 +19,7 @@ namespace Exercise2
                             Console.WriteLine(foo.FooBar(i));
                         }
 
-                        Console.WriteLine(foo.FooBar(num));
+                        //Console.WriteLine(foo.FooBar(num));
                     }
                     catch (FormatException ex)
                     {
