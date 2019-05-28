@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foobar", "Foobar\Foobar.csproj", "{A2ACC335-CD12-4411-B6C9-8D9F11FCBEC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foobar2", "Foobar2\Foobar2.csproj", "{6D24DB51-A82B-4AF8-BA26-DD83A1374789}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A2ACC335-CD12-4411-B6C9-8D9F11FCBEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2ACC335-CD12-4411-B6C9-8D9F11FCBEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2ACC335-CD12-4411-B6C9-8D9F11FCBEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D24DB51-A82B-4AF8-BA26-DD83A1374789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D24DB51-A82B-4AF8-BA26-DD83A1374789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D24DB51-A82B-4AF8-BA26-DD83A1374789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D24DB51-A82B-4AF8-BA26-DD83A1374789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

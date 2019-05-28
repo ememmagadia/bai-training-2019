@@ -3,13 +3,13 @@ using System.Linq;
 
 namespace Foobar
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
 
             string giveNum;
-            int check =0 ;
+            int check = 0;
             bool containsText = false;
             bool containsNon = false;
 
@@ -23,7 +23,9 @@ namespace Foobar
                     containsText = giveNum.Any(c => char.IsLetter(c));
                     containsNon = giveNum.Contains("");
                     check = int.Parse(giveNum);
+
                     if (int.TryParse(giveNum,out check))
+
                     {
                         if (containsNon)
                         {
