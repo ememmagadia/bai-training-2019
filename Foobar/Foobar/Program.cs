@@ -7,8 +7,9 @@ namespace Foobar
     {
         public static void Main(string[] args)
         {
+
             string giveNum;
-            int check = 0;
+            int check =0 ;
             bool containsText = false;
             bool containsNon = false;
 
@@ -17,25 +18,39 @@ namespace Foobar
             {
                 try
                 {
-                    Console.Write("Please Enter the Number: ");
+                    Console.Write("Enter A Number: ");
                     giveNum = Console.ReadLine();
                     containsText = giveNum.Any(c => char.IsLetter(c));
                     containsNon = giveNum.Contains("");
                     check = int.Parse(giveNum);
-                }
-                catch
-                {
-                    if (containsText)
+                    if (int.TryParse(giveNum,out check))
                     {
-                        Console.WriteLine("Invalid Input");
-                    }
-                    if (containsNon)
-                    {
-                        Console.WriteLine("Please Enter a Number!");
+                        if (containsNon)
+                        {
+                            Console.WriteLine("Enter a Number!");
+                        }
                     }
 
                 }
-                if (check % 3 == 0 && check % 5 == 0)
+                catch
+                {
+                     
+                }
+                if (containsText)
+                {
+                    Console.WriteLine("Invalid Input");
+                }
+                else if (check.Equals(null))
+                {
+                    Console.WriteLine("Enter a Number!");
+                }
+
+                else if (check < 0)
+                {
+                    Console.WriteLine("Positive Numbers Only");
+                }
+
+                else if (check % 3 == 0 && check % 5 == 0)
                 {
                     Console.WriteLine("Foobar");
                 }
@@ -47,24 +62,13 @@ namespace Foobar
                 {
                     Console.WriteLine("Foo");
                 }
-                else if (check < 0)
-                {
-                    Console.WriteLine("Positive Numbers Only");
-                }
                 else
                 {
                     Console.WriteLine(check);
                 }
 
-
-
-
             }
-
-
-
         }
-
 
     }
 }
