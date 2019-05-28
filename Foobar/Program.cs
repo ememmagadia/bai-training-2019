@@ -16,6 +16,7 @@ namespace Foobar
                 n.Number(Input);
                 i++;
             }
+            Console.WriteLine("Press ESC to exit");
             Console.ReadKey();
 
         }
