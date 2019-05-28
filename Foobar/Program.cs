@@ -12,13 +12,16 @@ namespace Foobar
 
             Class1 num = new Class1();
             int i = 0;
-            while (i <= 3)
+            Console.WriteLine("Type exit to esc");
+            while (i <= 10)
             {
-
-
                 Console.WriteLine("Enter a number");
                 string Input = Console.ReadLine();
-                if (int.TryParse(Input, out Number))
+                if (Input.Equals("exit"))
+                {
+                    System.Environment.Exit(1);
+                }
+                else if (int.TryParse(Input, out Number))
                 {
                     ValidNumber = true;
                     Number = Int32.Parse(Input);
