@@ -6,53 +6,66 @@ namespace FooBar
     {
         static void Main(string[] args)
         {
-            string[] msg = { "FOO", "BAR", "FOOBAR" };
-
+            Program p = new Program();
+            
             while (true)
             {
-                Console.WriteLine("Enter a number: <Press Q to exist>");
+                Console.WriteLine("Enter a number:");
                 string str = Console.ReadLine();
 
-                try
-                {
-                    int num = Convert.ToInt32(str);
-                    if (num > 0)
-                    {
-                        if (num % 3 == 0)
-                        {
-                            Console.WriteLine(msg[0]);
-                        }
-                        else if (num % 5 == 0)
-                        {
-                            Console.WriteLine(msg[1]);
-                        }
-                        else if (num % 3 == 0 && num % 5 == 0)
-                        {
-                            Console.WriteLine(msg[2]);
-                        }
-                        else if (num % 3 != 0 || num % 5 != 0)
-                        {
-                            Console.WriteLine(num);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Error");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("No negative");
-                    }
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Not valid integer");
-                }
+                p.ConvertToInt(str);
 
-                if (str.ToLower() == "q")
+                Console.WriteLine("< -- Press ESC to exit -- >");
+
+                if (Console.ReadKey().Key == ConsoleKey.Escape)
                 {
                     break;
                 }
+            }
+        }
+        public void ConvertToInt(string str)
+        {
+            Program p = new Program();
+            try
+            {
+                int num = Convert.ToInt32(str);
+
+                if (num > 0)
+                {
+                    p.CheckInput(num);
+                }
+                else
+                {
+                    Console.WriteLine("Does not accept negative values");
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Not valid integer");
+            }
+        }
+        public void CheckInput(int num)
+        {
+            string[] msg = { "FOO", "BAR", "FOOBAR" };
+            if (num % 3 == 0)
+            {
+                Console.WriteLine(msg[0]);
+            }
+            else if (num % 5 == 0)
+            {
+                Console.WriteLine(msg[1]);
+            }
+            else if (num % 3 == 0 && num % 5 == 0)
+            {
+                Console.WriteLine(msg[2]);
+            }
+            else if (num % 3 != 0 || num % 5 != 0)
+            {
+                Console.WriteLine(num);
+            }
+            else
+            {
+                Console.WriteLine("Error");
             }
         }
     }
