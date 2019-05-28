@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Foobar
 {
-    class Class1
+    public class Class1
     {
         public void DetermineFoobar(int num)
         {
@@ -26,7 +26,7 @@ namespace Foobar
             }
         }
     }
-    class Class2
+    public class Class2
     {
         public void StartMsg()
         {
