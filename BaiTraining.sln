@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise1", "Exercise1", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBar", "FooBar\FooBar.csproj", "{95E7ED53-9B19-4A62-94E3-05C778F4D2C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise2", "Exercise2", "{B96C82C1-6FD8-4E35-855F-40C518A0D082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarExtended", "FooBarExtended\FooBarExtended.csproj", "{1E573B9D-342E-4F97-A536-25F902B0226A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{95E7ED53-9B19-4A62-94E3-05C778F4D2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95E7ED53-9B19-4A62-94E3-05C778F4D2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95E7ED53-9B19-4A62-94E3-05C778F4D2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E573B9D-342E-4F97-A536-25F902B0226A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E573B9D-342E-4F97-A536-25F902B0226A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E573B9D-342E-4F97-A536-25F902B0226A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E573B9D-342E-4F97-A536-25F902B0226A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{95E7ED53-9B19-4A62-94E3-05C778F4D2C0} = {7F68BC95-12C0-4E31-88F7-A5B9BA8028AE}
+		{1E573B9D-342E-4F97-A536-25F902B0226A} = {B96C82C1-6FD8-4E35-855F-40C518A0D082}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BCD215-D9D6-42A9-B4C8-9435B2C87B9D}
