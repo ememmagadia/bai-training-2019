@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise1", "Exercise1", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foobar", "Foobar\Foobar.csproj", "{B7080487-7FC0-4FDA-B93D-55949F475854}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise2", "Exercise2", "{B8283D8E-105B-47DF-BE89-DA3D0C770FB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LomioFooBar", "LomioFooBar\LomioFooBar.csproj", "{B76B1FEE-06BC-44CB-BF27-2365F293DB2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{B7080487-7FC0-4FDA-B93D-55949F475854}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7080487-7FC0-4FDA-B93D-55949F475854}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7080487-7FC0-4FDA-B93D-55949F475854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76B1FEE-06BC-44CB-BF27-2365F293DB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76B1FEE-06BC-44CB-BF27-2365F293DB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76B1FEE-06BC-44CB-BF27-2365F293DB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76B1FEE-06BC-44CB-BF27-2365F293DB2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B7080487-7FC0-4FDA-B93D-55949F475854} = {3E30B3B5-33EF-4564-9F5E-49D3E69232A8}
+		{B76B1FEE-06BC-44CB-BF27-2365F293DB2A} = {B8283D8E-105B-47DF-BE89-DA3D0C770FB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BCD215-D9D6-42A9-B4C8-9435B2C87B9D}
