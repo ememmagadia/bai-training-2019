@@ -4,58 +4,84 @@ namespace FooBar
 {
     class Program
     {
-        static void Main(string[] args)
-        { 
 
+        static void Main(string[] args)
+        {
             int num;
             bool isNum;
+            bool isPosNum;
 
             do
             {
                 Console.Write("Enter any number: ");
                 //TryParse(string, save to)
                 isNum = int.TryParse(Console.ReadLine(), out num);
-
+                FooBarUtilities util = new FooBarUtilities();
+                isNum = util.IsNum(isNum);
                 if(isNum)
                 {
-                    if (num >= 0)
+                    isPosNum = util.IsPositiveNum(num);
+                    if (isPosNum)
                     {
-                        string output = GetOutput(num);
+                        string output = util.GetOutput(num);
                         Console.WriteLine(output);
                     }
-                    else
-                    {
-                        Console.WriteLine("Enter a positive number.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Enter a valid number. Re-run to try again.");
-                }
+                }                
 
             } while (isNum);
         }
 
-        static string GetOutput(int num)
+    }
+
+    public class FooBarUtilities
+    {
+        public bool IsNum(bool isNum)
+        {
+            if (isNum)
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Enter a valid number. Re-run to try again.");
+                return false;
+            }
+        }
+
+        public bool IsPositiveNum(int num)
+        {
+            if (num >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Enter a positive number.");
+                return false;
+            }
+        }
+
+
+        public string GetOutput(int num)
         {
             if (num % 3 == 0 && num % 5 == 0)
             {
-                return "Output:FooBar";
+                return "FooBar";
             }
 
             else if (num % 5 == 0)
             {
-                return "Output: Bar";
+                return "Bar";
             }
 
             else if (num % 3 == 0)
             {
-                return "Output: Foo";
+                return "Foo";
             }
 
             else
             {
-                return "Output: " + num;
+                return num.ToString();
             }
         }
     }
