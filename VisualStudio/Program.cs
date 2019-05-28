@@ -7,6 +7,7 @@ namespace VisualStudio
     {
         static void Main(string[] args)
         {
+
             TestClass foo = new TestClass();
             {
                 while (true)
@@ -24,6 +25,7 @@ namespace VisualStudio
                 }
             }
            
+
         }
     }
 }
