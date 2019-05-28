@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudio", "VisualStudio\VisualStudio.csproj", "{63889D62-F557-4522-8A21-B6E1F125A98E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise1", "Exercise1", "{3E30B3B5-33EF-4564-9F5E-49D3E69232A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foobar", "Foobar\Foobar.csproj", "{B7080487-7FC0-4FDA-B93D-55949F475854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63889D62-F557-4522-8A21-B6E1F125A98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63889D62-F557-4522-8A21-B6E1F125A98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63889D62-F557-4522-8A21-B6E1F125A98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63889D62-F557-4522-8A21-B6E1F125A98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7080487-7FC0-4FDA-B93D-55949F475854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7080487-7FC0-4FDA-B93D-55949F475854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7080487-7FC0-4FDA-B93D-55949F475854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7080487-7FC0-4FDA-B93D-55949F475854}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7080487-7FC0-4FDA-B93D-55949F475854} = {3E30B3B5-33EF-4564-9F5E-49D3E69232A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BCD215-D9D6-42A9-B4C8-9435B2C87B9D}
