@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Foobar;
+using System;
 
-namespace Foobar
+namespace Foobar2
 {
     class Program
     {
@@ -24,7 +25,8 @@ namespace Foobar
                         }
                         else
                         {
-                            Console.WriteLine(fb.Foobar(Num1));
+                            for (int i = 1; i <= Num1; i++)
+                                Console.WriteLine(fb.Foobar(i));
                         }
                     }
                     else
@@ -39,7 +41,6 @@ namespace Foobar
             while (again == "y" || again == "Y");
         }
 
-
     }
-
 }
+
