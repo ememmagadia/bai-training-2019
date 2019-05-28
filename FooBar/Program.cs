@@ -7,37 +7,31 @@ namespace FooBar
         static void Main(string[] args)
         { 
 
-            string loop = "N";
             int num;
             bool isNum;
 
             do
             {
                 Console.Write("Enter any number: ");
+                //TryParse(string, save to)
                 isNum = int.TryParse(Console.ReadLine(), out num);
-
-                //Console.WriteLine("Accepted number is " + num);
 
                 if(isNum)
                 {
-                    if (num > 0)
+                    if (num >= 0)
                     {
                         string output = GetOutput(num);
                         Console.WriteLine(output);
                     }
                     else
                     {
-                        Console.WriteLine("I can only process positive numbers.");
+                        Console.WriteLine("Enter a positive number.");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Please enter a valid number.");
+                    Console.WriteLine("Enter a valid number. Re-run to try again.");
                 }
-                
-
-                //Console.Write("Try again? (Y/N): ");
-                //loop = Console.ReadLine();
 
             } while (isNum);
         }
@@ -46,7 +40,7 @@ namespace FooBar
         {
             if (num % 3 == 0 && num % 5 == 0)
             {
-                return "Output: FooBar";
+                return "Output:FooBar";
             }
 
             else if (num % 5 == 0)
