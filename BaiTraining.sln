@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudio", "VisualStudio\VisualStudio.csproj", "{63889D62-F557-4522-8A21-B6E1F125A98E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualStudio", "VisualStudio\VisualStudio.csproj", "{63889D62-F557-4522-8A21-B6E1F125A98E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise1", "Exercise1", "{0B9B2A5F-DE1F-4E32-A7BA-E5816DB94664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FOOBAR", "..\..\..\Desktop\Exp1\FOOBAR\FOOBAR.csproj", "{DB139BDD-42C0-4BA1-A5B0-4FF257B3E130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{63889D62-F557-4522-8A21-B6E1F125A98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63889D62-F557-4522-8A21-B6E1F125A98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63889D62-F557-4522-8A21-B6E1F125A98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB139BDD-42C0-4BA1-A5B0-4FF257B3E130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB139BDD-42C0-4BA1-A5B0-4FF257B3E130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB139BDD-42C0-4BA1-A5B0-4FF257B3E130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB139BDD-42C0-4BA1-A5B0-4FF257B3E130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB139BDD-42C0-4BA1-A5B0-4FF257B3E130} = {0B9B2A5F-DE1F-4E32-A7BA-E5816DB94664}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BCD215-D9D6-42A9-B4C8-9435B2C87B9D}
