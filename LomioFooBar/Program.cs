@@ -18,7 +18,7 @@ namespace LomioFooBar
                 {
                     ValidNumber = true;
                     Number = Int32.Parse(Input);
-                for (int i = 0; i < Number; i++)
+                for (int i = 1; i <= Number; i++)
                 {
                     //calling the Number method
                     num.Number(i);
