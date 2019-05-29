@@ -87,9 +87,13 @@ namespace Calculator
             {
                 Program.Product(ListOfNumber);
             }
-            else
+            else if (SelectOperator == 4)
             {
                 Program.Divide(ListOfNumber);
+            }
+            else
+            {
+                Console.WriteLine("Please Enter 1 to 4");
             }
 
 
