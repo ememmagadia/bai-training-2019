@@ -7,42 +7,42 @@ namespace Activity1
     class Calculator : Operators
     {
         private string sign;
-        private int num1;
-        private int num2;
+        private double num1;
+        private double num2;
         public string Sign
         {
             get { return sign; }
             set { sign = value; }
         }
 
-        public int Num1
+        public double Num1
         {
             get { return num1; }
             set { num1 = value; }
         }
 
-        public int Num2
+        public double Num2
         {
             get { return num2; }
             set { num2 = value; }
         }
-        public int ConvertNum(string str)
+        public double ConvertNum(string str)
         {
-            int num = 0;
-            bool isInt = int.TryParse(str, out num);
-            if (isInt)
+            double num = 0;
+            bool isdouble = double.TryParse(str, out num);
+            if (isdouble)
             {
                 return num;
             }
             else
             {
-                Console.WriteLine("Invalid Integer");
+                Console.WriteLine("Invalid double");
                 Environment.Exit(0);
                 return 0;  
             }
         }
 
-        public void operatorChecker(string sign, int num1, int num2)
+        public void operatorChecker(string sign, double num1, double num2)
         {
             if (sign == "+")
             {

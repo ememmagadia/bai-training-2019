@@ -7,6 +7,8 @@ namespace FooBar
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("CALCULATOR");
+
             FooBarClass p = new FooBarClass();
             while (true)
             {

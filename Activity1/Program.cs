@@ -15,11 +15,11 @@ namespace Activity1
 
                 Console.WriteLine("Enter first number:");
                 string input1 = Console.ReadLine();
-                int num1 = calc.ConvertNum(input1);
+                double num1 = calc.ConvertNum(input1);
 
                 Console.WriteLine("Enter second number:");
                 string input2 = Console.ReadLine();
-                int num2 = calc.ConvertNum(input2);
+                double num2 = calc.ConvertNum(input2);
 
                 Console.WriteLine("Enter operator: < + - * / >");
                 calc.Sign = Console.ReadLine();
@@ -30,7 +30,7 @@ namespace Activity1
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("Not valid integer");
+                    Console.WriteLine("Not valid double");
                 }
 
                 Console.WriteLine("Do you want to exit? (Y/N)");
