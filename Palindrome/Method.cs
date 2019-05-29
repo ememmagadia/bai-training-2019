@@ -16,15 +16,10 @@ namespace Palindrome
         {
             for (int i = 0; i <= disp.Length / 2; i++)
             {
-                if (disp[i] == disp[disp.Length - (i + 1)])
-                {
-                    isPalindrome = true;
-                }
-                else
+                if (disp[i] != disp[disp.Length - (i + 1)])
                 {
                     isPalindrome = false;
                     break;
-                    return isPalindrome;
                 }
             }
             return isPalindrome;
