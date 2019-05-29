@@ -8,15 +8,15 @@ namespace Foobar
         {
             Class1 fb = new Class1();
             int Num1 = 0;
-            string ans;
+            string answer;
             string again = "n";
             do
             {
                 do
                 {
                     Console.Write("Input Number:");
-                    ans = Console.ReadLine();
-                    if (int.TryParse(ans, out Num1))
+                    answer = Console.ReadLine();
+                    if (int.TryParse(answer, out Num1))
                     {
                         if (Num1 < 0)
                         {
