@@ -83,4 +83,29 @@ namespace Calculator
             return firstNum * secondNum;
         }
     }
+
+    class Remainder : Calculator
+    {
+        public Remainder(int num1, int num2)
+        {
+            firstNum = num1;
+            secondNum = num2;
+        }
+
+        public override int Calculate()
+        {
+            Console.Write(" with a remainder of ");
+
+            try
+            {
+                return firstNum % secondNum;
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.Write("undefined because divisor is ");
+                return 0;
+            }
+        }
+
+    }
 }

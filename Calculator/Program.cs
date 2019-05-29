@@ -76,7 +76,10 @@ namespace Calculator
             else if (Optr == "/")
             {
                 Divide div = new Divide(FirstNum, SecondNum);
+                Remainder mod = new Remainder(FirstNum, SecondNum);
                 Result = div.Calculate();
+                Console.Write(Result);
+                Result = mod.Calculate();
                 Console.WriteLine(Result);
             }
             else if (Optr == "*")
