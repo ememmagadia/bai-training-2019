@@ -1,55 +1,65 @@
 ﻿namespace Calculator
 {
-    public class Calculator
+    abstract class Calculator
     {
         internal int firstNum;
         internal int secondNum;
-        internal int result;
-
-        public virtual int Answer()
-        {
-            
-        }
-        
+        public abstract int Calculate();
     }
 
     class Add : Calculator
     {
-        public override int Answer()
+        public Add (int num1, int num2)
         {
-            System.Console.WriteLine("Sum is:");
-            result = firstNum + secondNum;
-            return result;
+            firstNum = num1;
+            secondNum = num2;
+        }
+        public override int Calculate()
+        {
+            System.Console.Write("The Sum {0} and {1} is: ", firstNum, secondNum);
+            return firstNum+secondNum;
         }
     }
 
     class Subtract : Calculator
     {
-        public override int Answer()
+        public Subtract(int num1, int num2)
         {
-            System.Console.WriteLine("Difference is:");
-            result = firstNum - secondNum;
-            return result;
+            firstNum = num1;
+            secondNum = num2;
+        }
+        public override int Calculate()
+        {
+            System.Console.Write("The Difference of {0} and {1} is: ", firstNum, secondNum);
+            return firstNum - secondNum;
         }
     }
 
     class Multiply : Calculator
     {
-        public override int Answer()
+        public Multiply(int num1, int num2)
         {
-            System.Console.WriteLine("Sum is:");
-            result = firstNum * secondNum;
-            return result;
+            firstNum = num1;
+            secondNum = num2;
+        }
+        public override int Calculate()
+        {
+            System.Console.Write("The Product of {0} and {1} is: ", firstNum, secondNum);
+            return firstNum * secondNum;
         }
     }
 
     class Divide : Calculator
     {
-        public override int Answer()
+        public Divide(int num1, int num2)
         {
-            System.Console.WriteLine("Sum is:");
-            result = firstNum / secondNum;
-            return result;
+            firstNum = num1;
+            secondNum = num2;
+        }
+        public override int Calculate()
+        {
+            System.Console.Write("The Quotient of {0} and {1} is: ", firstNum, secondNum);
+            return firstNum / secondNum;
         }
     }
 
