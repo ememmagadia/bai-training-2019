@@ -36,37 +36,42 @@ namespace Activity1
             }
             else
             {
-                Console.WriteLine("Invalid double");
-                Environment.Exit(0);
+
+                Console.WriteLine("\n Invalid double \n");
+                //Environment.Exit(0);
                 return 0;  
             }
         }
 
-        public void operatorChecker(string sign, double num1, double num2)
+        public bool operatorChecker(string sign, double num1, double num2)
         {
             if (sign == "+")
             {
                 Add(num1, num2);
+                return false;
             }
             else if (sign == "-")
             {
                 Subtract(num1, num2);
+                return false;
             }
             else if (sign == "*")
             {
                 Multiply(num1, num2);
+                return false;
             }
             else if (sign == "/")
             {
                 Divide(num1, num2);
+                return false;
             }
             else
             {
                 Console.WriteLine("You entered invalid operator. Only accept: + | - | * | / ");
-                Environment.Exit(0);
+                return true;
+                //Environment.Exit(0);
             }
         }
-
 
 
     }
