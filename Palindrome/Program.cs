@@ -8,6 +8,17 @@ namespace Palindrome
         static void Main(string[] args)
         {
             List<string> ListOfPalindrome = new List<string>();
+            AddToList(ListOfPalindrome);
+
+            foreach (var disp in ListOfPalindrome)
+            {
+                Method.DisplayPalindrome(disp);
+            }
+
+        }
+
+        private static void AddToList(List<string> ListOfPalindrome)
+        {
             ListOfPalindrome.Add("civic");
             ListOfPalindrome.Add("deified");
             ListOfPalindrome.Add("deleveled");
@@ -37,15 +48,7 @@ namespace Palindrome
             ListOfPalindrome.Add("RaCe CaR");
             ListOfPalindrome.Add("rAce caR");
 
-
-            foreach (var disp in ListOfPalindrome)
-            {
-                Method.DisplayPalindrome(disp);
-            }
-
         }
-
-        
     }
 }
 
