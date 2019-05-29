@@ -104,6 +104,7 @@ namespace Calculator
             Console.WriteLine("Calculator");
             Console.WriteLine("*************************************");
             Console.WriteLine("* 1 - Compute with two numbers      *");
+            //Console.WriteLine("* 2 - Enter a string to be computed *");
             Console.WriteLine("* x - Exit program                  *");
             Console.WriteLine("*************************************");
 
@@ -137,7 +138,8 @@ namespace Calculator
             }
 
         }
-        static void Main(string[] args)
+        //static void Main(string[] args)
+        public static void CalculatorMain()
         {
             Calculator c = new Calculator();
             c.DisplayMainMenu();
