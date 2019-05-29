@@ -4,10 +4,6 @@ namespace TestLibrary
 {
     public class TestClass
     {
-        public string GetName(string name)
-        {
-            return name;
-        }
         public string FooBar(int num)
         {
             if (num % 3 == 0 && num % 5 == 0)
@@ -26,6 +22,39 @@ namespace TestLibrary
             {
                 return num.ToString();
             }
+        }
+
+        public static char Operator { get; set; }
+
+        public static bool calculate(int num1,int num2)
+        {
+            Calculator calc = new Calculator(num1, num2);
+            bool result;
+            switch (TestClass.Operator)
+            {
+                case '+':
+                    calc.Add();
+                    result = false;
+                    break;
+                case '-':
+                    calc.Subtract();
+                    result = false;
+                    break;
+                case '*':
+                    calc.Multiply();
+                    result = false;
+                    break;
+                case '/':
+                    calc.Divide();
+                    result = false;
+                    break;
+                default:
+                    Console.Write("input valid operator:");
+                    result = true;
+                    break;
+            }
+            return result;
+
         }
     }
 }
