@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise3", "Exercise3", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{0667A1BE-5F85-4591-B6B9-B03056B4D99C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise4", "Exercise4", "{8B6B7824-6793-4AAC-87E4-151FB38D51F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{C9B91FC0-84F2-4854-906B-2F0E3AD993A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{0667A1BE-5F85-4591-B6B9-B03056B4D99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0667A1BE-5F85-4591-B6B9-B03056B4D99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0667A1BE-5F85-4591-B6B9-B03056B4D99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B91FC0-84F2-4854-906B-2F0E3AD993A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B91FC0-84F2-4854-906B-2F0E3AD993A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B91FC0-84F2-4854-906B-2F0E3AD993A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B91FC0-84F2-4854-906B-2F0E3AD993A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +55,7 @@ Global
 		{DC4B0DBB-1A40-4C76-8F48-C1A2916D394B} = {AF28F7DF-6EA0-48D4-8361-02E0598A96AE}
 		{F726899F-3782-49FF-A8ED-67DEAA42F7A6} = {E2E1BAA0-6F5A-4394-946A-12CD1D84A69F}
 		{0667A1BE-5F85-4591-B6B9-B03056B4D99C} = {5BEA1196-97DE-40AB-B8CC-0FEC57B39411}
+		{C9B91FC0-84F2-4854-906B-2F0E3AD993A8} = {8B6B7824-6793-4AAC-87E4-151FB38D51F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BCD215-D9D6-42A9-B4C8-9435B2C87B9D}
