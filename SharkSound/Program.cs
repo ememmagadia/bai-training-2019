@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace SharkSound
@@ -7,6 +8,12 @@ namespace SharkSound
     {
         static void Main(string[] args)
         {
+            List<string> ListOfOperations = new List<string>();
+            ListOfOperations.Add("+");
+            ListOfOperations.Add("-");
+            ListOfOperations.Add("*");
+            ListOfOperations.Add("/");
+            string op = "";
             int Num1 = 0;
             int Num2 = 0;
             Operations comp = new Operations();
@@ -36,11 +43,21 @@ namespace SharkSound
                 {
                     Console.WriteLine("Please input a number");
                 }
-
             }
-
             Console.Write("Input the desired operation(+,-,*,/):");
-            string op = Console.ReadLine();
+            while (true)
+            {
+                op = Console.ReadLine();
+                if (ListOfOperations.Contains(op))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Try again and input a valid operation");
+                }
+                
+            }
             switch (op)
             {
                 case "+":
@@ -53,12 +70,8 @@ namespace SharkSound
                     Console.WriteLine("The result is {0}", comp.Mult(Num1, Num2));
                     break;
                 case "/":
-                    Console.WriteLine("The result is {0}", comp.Mult(Num1, Num2));
+                    Console.WriteLine("The result is {0}", comp.Div(Num1, Num2));
                     break;
-                default:
-                    Console.WriteLine("Try again and input a valid operation");
-                    break;
-
             }
         }
     }
