@@ -23,7 +23,7 @@ namespace Foobar2
                     giveNum = Console.ReadLine();
                     containsText = giveNum.Any(c => char.IsLetter(c));
                     containsNon = giveNum.Contains("");
-                    check = int.Parse(giveNum);
+                    check = int.Parse(giveNum); 
                     if (int.TryParse(giveNum, out check))
                     {
                         if (containsNon)
