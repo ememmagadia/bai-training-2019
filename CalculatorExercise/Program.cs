@@ -7,23 +7,52 @@ namespace CalculatorExercise
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                //TestClass calculator = new TestClass();
-                bool test = true;
-                Console.Write("Input first number:");
-                int Fnum = Convert.ToInt32(Console.ReadLine());
+            bool test = true;
+            int Fnum = 0;
+            int Snum = 0;
 
-                Console.Write("Input second number:");
-                int Snum = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Input operation number:");
-                while (test)
+            while (test)
+            {
+                try
                 {
-                    TestClass.Operator = Console.ReadKey().KeyChar;
-                    Console.WriteLine("");
-                    test = TestClass.calculate(Fnum, Snum);
+                    Console.Write("Input first number:");
+                    Fnum = Convert.ToInt32(Console.ReadLine());
+                    test = false;
+
+                }
+                catch(FormatException ex)
+                {
+                    Console.WriteLine("Invalid input.");
+                    continue;
                 }
             }
+            test = true;
+            while (test)
+            {
+                try
+                {
+                    Console.Write("Input second number:");
+                    Snum = Convert.ToInt32(Console.ReadLine());
+                    test = false;
+                }
+                catch (FormatException ex)
+                {
+                    Console.WriteLine("Invalid input.");
+                    continue;
+                }
+                Console.Write("Input operation number:");
+
+
+            }
+            test = true;
+            while (test)
+            {
+                TestClass.Operator = Console.ReadKey().KeyChar;
+                Console.WriteLine("");
+                test = TestClass.calculate(Fnum, Snum);
+            }
+
+
 
         }
     }
