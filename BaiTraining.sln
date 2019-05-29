@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise3", "Exercise3", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharkSounds", "SharkSounds\SharkSounds.csproj", "{85EA4C0F-57E7-4DFC-BFDF-15B33E506D71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{5F5C7C50-595C-412E-B941-ECAA8389F691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{85EA4C0F-57E7-4DFC-BFDF-15B33E506D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85EA4C0F-57E7-4DFC-BFDF-15B33E506D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85EA4C0F-57E7-4DFC-BFDF-15B33E506D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5C7C50-595C-412E-B941-ECAA8389F691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5C7C50-595C-412E-B941-ECAA8389F691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5C7C50-595C-412E-B941-ECAA8389F691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5C7C50-595C-412E-B941-ECAA8389F691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{95E7ED53-9B19-4A62-94E3-05C778F4D2C0} = {7F68BC95-12C0-4E31-88F7-A5B9BA8028AE}
 		{1E573B9D-342E-4F97-A536-25F902B0226A} = {B96C82C1-6FD8-4E35-855F-40C518A0D082}
 		{85EA4C0F-57E7-4DFC-BFDF-15B33E506D71} = {21A03C16-0491-48EE-A893-56D8352CBE47}
+		{5F5C7C50-595C-412E-B941-ECAA8389F691} = {21A03C16-0491-48EE-A893-56D8352CBE47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BCD215-D9D6-42A9-B4C8-9435B2C87B9D}

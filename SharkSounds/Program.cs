@@ -17,7 +17,8 @@ namespace SharkSounds
     }
     class Program
     {
-        static void Main(string[] args)
+        //static void Main(string[] args)
+        static void ProgramMain()
         {
             Console.WriteLine(" - Shark Sounds - ");
             Shark BabyShark = new Shark
