@@ -11,8 +11,6 @@ namespace PalinDrome
         {
             List<string> ListOfPalindrome = new List<string>();
 
-            PalinDromeClass p = new PalinDromeClass();
-
             ListOfPalindrome.Add("civic");
             ListOfPalindrome.Add("deified");
             ListOfPalindrome.Add("deleveled");
@@ -42,25 +40,8 @@ namespace PalinDrome
             ListOfPalindrome.Add("RaCe CaR");
             ListOfPalindrome.Add("rAce caR");
 
-            for (int c = 0; c < ListOfPalindrome.Count; c++)
-            {
-                string reverse="";
-                string proper = ListOfPalindrome[c];
-                int length = proper.Length;
-
-                while (length > 0)
-                {
-                    reverse += proper[length-1];
-                    length--;
-                }
-
-                proper = ListOfPalindrome[c].Replace(" ", ""); 
-                reverse = reverse.Replace(" ", "");
-
-                bool result = p.IsMatch(proper, reverse);
-
-                Console.WriteLine("Word: {0} / Result: {1}", proper, result);
-            }
+            PalinDromeClass p = new PalinDromeClass();
+            p.PrintList(ListOfPalindrome);
 
         }
 
