@@ -59,7 +59,7 @@ namespace PalinDrome
 
                 bool result = p.IsMatch(proper, reverse);
 
-                Console.WriteLine("Word: {0} - {1} Result: {2}", proper, reverse, result);
+                Console.WriteLine("Word: {0} / Result: {2}", proper, result);
             }
 
         }
