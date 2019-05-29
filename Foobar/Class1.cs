@@ -10,7 +10,7 @@ namespace Foobar
         {
                 if (Num1 == 0)
                 {
-                    Console.WriteLine(Num1 + " " +  "FOOBAR");
+                    Console.WriteLine("{0} FOOBAR" , Num1);
                 }
                 else if (Num1 < 0)
                 {
@@ -18,16 +18,16 @@ namespace Foobar
                 }
                 else if (Num1 % 15 == 0)
                 {
-                    Console.WriteLine(Num1 + " " +  "FOOBAR");
+                    Console.WriteLine("{0} FOOBAR" , Num1);
                 }
                 else if (Num1 % 3 == 0)
                 {
-                    Console.WriteLine(Num1 + " " + "FOO");
+                    Console.WriteLine("{0} FOO" , Num1);
 
                 }
                 else if (Num1 % 5 == 0)
                 {
-                    Console.WriteLine(Num1 + " " + "BAR");
+                    Console.WriteLine("{0} BAR", Num1);
 
                 }
                 else
