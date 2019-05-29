@@ -7,8 +7,13 @@ namespace Palindrome
         public static void DisplayPalindrome(string disp)
         {
             bool isPalindrome = true;
-            disp = RemoveSpace(disp);
+            string str = RemoveSpace(disp);
+            isPalindrome = PalindromeCheck(str, isPalindrome);
+            Console.WriteLine("{0}: / Result is: {1}", disp, isPalindrome);
+        }
 
+        private static bool PalindromeCheck(string disp, bool isPalindrome)
+        {
             for (int i = 0; i <= disp.Length / 2; i++)
             {
                 if (disp[i] == disp[disp.Length - (i + 1)])
@@ -19,15 +24,16 @@ namespace Palindrome
                 {
                     isPalindrome = false;
                     break;
+                    return isPalindrome;
                 }
             }
-            Console.WriteLine("{0}: / Result is: {1}", disp, isPalindrome);
+            return isPalindrome;
         }
 
         private static string RemoveSpace(string disp)
         {
-            string str = disp.Replace(" ", "");
-            return str;
+            disp = disp.Replace(" ", "");
+            return disp;
         }
     }
 }
