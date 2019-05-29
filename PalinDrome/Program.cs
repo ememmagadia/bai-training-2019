@@ -54,12 +54,12 @@ namespace PalinDrome
                     length--;
                 }
 
-                proper = Regex.Replace(ListOfPalindrome[c], @"\s", "");
-                reverse = Regex.Replace(reverse, @"\s", "");
+                proper = ListOfPalindrome[c].Replace(" ", ""); 
+                reverse = reverse.Replace(" ", "");
 
                 bool result = p.IsMatch(proper, reverse);
 
-                Console.WriteLine("Word: {0} / Result: {2}", proper, result);
+                Console.WriteLine("Word: {0} / Result: {1}", proper, result);
             }
 
         }

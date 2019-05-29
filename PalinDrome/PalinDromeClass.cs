@@ -6,11 +6,6 @@ namespace PalinDrome
 {
     class PalinDromeClass
     {
-        public void ReverseWord(int count)
-        {
-            
-        }
-
         public bool IsMatch(string a, string b)
         {
             if (a.Equals(b))
