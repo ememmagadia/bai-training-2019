@@ -56,5 +56,25 @@ namespace TestLibrary
             return result;
 
         }
+        public bool IsPalindrome(string input)
+        {
+            int len = input.Length;
+            char[] arrayInput = input.ToCharArray();
+            string revString = "";
+            for(int i = len-1;i >=0;i--)
+            {
+                revString += arrayInput[i];
+            }
+
+            if (input.Equals(revString))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }
