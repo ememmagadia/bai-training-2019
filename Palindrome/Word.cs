@@ -6,26 +6,29 @@ namespace Palindrome
 {
     public class Word
     {
-        public String Palindrome(String word)
+        public class B : Word
         {
-            string original = word.Substring(0, word.Length / 2);
-            char[] array = word.ToCharArray();
-
-            Array.Reverse(array);
-
-            string x = new String(array);
-            string reverse = x.Substring(0, x.Length / 2);
-            if (original.Equals(reverse))
+            public String GetValue(String word)
             {
-                word = "true";
-            }
-            else
-            {
-                word = "false";
+                string original = word.Substring(0, word.Length / 2);
+                char[] array = word.ToCharArray();
 
-            }
+                Array.Reverse(array);
 
-            return word;
+                string x = new String(array);
+                string reverse = x.Substring(0, x.Length / 2);
+                if (original.Equals(reverse))
+                {
+                    word = "true";
+                }
+                else
+                {
+                    word = "false";
+
+                }
+
+                return word;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Palindrome
 {
+    
     class Program
     {
 
@@ -41,8 +42,8 @@ namespace Palindrome
             {
                 String removeWhiteSpace = ListOfPalindrome[i].Replace(" ", String.Empty);
 
-                Word word = new Word();
-                String result = word.Palindrome(removeWhiteSpace);
+                var word = new Word.B();
+                String result = word.GetValue(removeWhiteSpace);
                 Console.WriteLine("Word {0} Result {1}" , ListOfPalindrome[i],result);
             }
 

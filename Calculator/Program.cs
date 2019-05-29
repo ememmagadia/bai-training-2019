@@ -74,28 +74,29 @@ namespace Calculator
             Console.WriteLine("Select a Operator");
             String Operator = Console.ReadLine();
             int SelectOperator = Int32.Parse(validate.validate(Operator));
-
-            if (SelectOperator == 1)
-            {
-                Program.Add(ListOfNumber);
-            }
-            else if (SelectOperator == 2)
-            {
-                Program.Subtract(ListOfNumber);
-            }
-            else if (SelectOperator == 3)
-            {
-                Program.Product(ListOfNumber);
-            }
-            else if (SelectOperator == 4)
-            {
-                Program.Divide(ListOfNumber);
-            }
-            else
-            {
-                Console.WriteLine("Please Enter 1 to 4");
-            }
-
+          
+                if (SelectOperator == 1)
+                {
+                    Program.Add(ListOfNumber);
+                }
+                else if (SelectOperator == 2)
+                {
+                    Program.Subtract(ListOfNumber);
+                }
+                else if (SelectOperator == 3)
+                {
+                    Program.Product(ListOfNumber);
+                }
+                else if (SelectOperator == 4)
+                {
+                    Program.Divide(ListOfNumber);
+                }
+                else
+                {
+                    Console.WriteLine("Please Enter 1 to 4");
+                }
+            
+           
 
 
 
