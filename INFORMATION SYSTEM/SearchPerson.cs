@@ -87,6 +87,10 @@ namespace INFORMATION_SYSTEM
             {
                 Console.WriteLine("Name: {0} \nAge: {1} \nGender{2}: ", i.Name, i.Age, i.Gender);
             }
+            if (!personz.Any())
+            {
+                Console.WriteLine("No Result");
+            }
             
         }
             public void byPersonAge(String x)
@@ -105,7 +109,11 @@ namespace INFORMATION_SYSTEM
                 {
                     Console.WriteLine("Name: {0} \nAge: {1} \nGender: {2}", i.Name, i.Age, i.Gender);
                 }
+            if (!personz.Any())
+            {
+                Console.WriteLine("No Result");
             }
+        }
         public void byPersonGender(String x)
         {
 
@@ -121,6 +129,10 @@ namespace INFORMATION_SYSTEM
             foreach (var i in personz)
             {
                 Console.WriteLine("Name: {0} \nAge: {1} \nGender: {2}", i.Name, i.Age, i.Gender);
+            }
+            if (!personz.Any())
+            {
+                Console.WriteLine("No Result");
             }
         }
 

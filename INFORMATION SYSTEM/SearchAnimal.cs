@@ -87,6 +87,10 @@ namespace INFORMATION_SYSTEM
             {
                 Console.WriteLine("Name: {0} \nKind: {1} \nGender{2}", i.Name, i.Kind, i.Gender);
             }
+            if (!animalz.Any())
+            {
+                Console.WriteLine("No Result");
+            }
         }
         public void byAnimalKind(String x)
         {
@@ -103,6 +107,10 @@ namespace INFORMATION_SYSTEM
             {
                 Console.WriteLine("Name: {0} \nKind: {1} \nGender{2}", i.Name, i.Kind, i.Gender);
             }
+            if (!animalz.Any())
+            {
+                Console.WriteLine("No Result");
+            }
         }
         public void byAnimalGender(String x)
         {
@@ -118,6 +126,10 @@ namespace INFORMATION_SYSTEM
             foreach (var i in animalz)
             {
                 Console.WriteLine("Name: {0} \nKind: {1} \nGender{2}", i.Name, i.Kind, i.Gender);
+            }
+            if (!animalz.Any())
+            {
+                Console.WriteLine("No Result");
             }
         }
     }

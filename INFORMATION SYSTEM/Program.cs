@@ -67,6 +67,14 @@ namespace INFORMATION_SYSTEM
                     String x = Console.ReadLine();
                     SA.byAnimalGender(x);
                 }
+                else
+                {
+                    Console.WriteLine("Not a Category");
+                }
+            }
+            else if (PoA!="1" && PoA!="2")
+            {
+                Console.WriteLine("Invalid Input");
             }
 
         }
