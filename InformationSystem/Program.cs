@@ -29,18 +29,7 @@ namespace InformationSystem
             while (again == "Y" || again == "y");
         }
 
-        private static string tryAgain(string again)
-        {
-            while (true)
-            {
-                Console.Write("Do you want to try again? (Y/N): ");
-                again = Console.ReadLine();
-                if (again == "Y" || again == "y" || again == "N" || again == "n") break;
-                else Console.WriteLine("Invalid! Try Again!");
-            }
-            return again;
-        }
-
+        #region MainMethods
         private static string allOrSearch(string choice2)
         {
             while (true)
@@ -52,7 +41,6 @@ namespace InformationSystem
             }
             return choice2;
         }
-
         private static string getPersonAnimal(string choice)
         {
             while (true)
@@ -64,7 +52,19 @@ namespace InformationSystem
             }
             return choice;
         }
-
+        private static string tryAgain(string again)
+        {
+            while (true)
+            {
+                Console.Write("Do you want to try again? (Y/N): ");
+                again = Console.ReadLine();
+                if (again == "Y" || again == "y" || again == "N" || again == "n") break;
+                else Console.WriteLine("Invalid! Try Again!");
+            }
+            return again;
+        }
+        #endregion
+        #region addToList
         private static IList<Animal> addAnimalList()
         {
             return new List<Animal>()
@@ -94,7 +94,8 @@ namespace InformationSystem
                 new Person() {name="Aaron", age=15, gender="Male"},
             };
         }
-
+        #endregion
+        #region displayList
         private static void displayList(IList<Animal> animalList)
         {
             foreach (var list in animalList)
@@ -110,5 +111,6 @@ namespace InformationSystem
                 Console.WriteLine("{0} is {1} years old and is a {2}", list.name, list.age, list.gender);
             }
         }
+        #endregion
     }
 }

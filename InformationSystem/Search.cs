@@ -6,6 +6,7 @@ namespace InformationSystem
 {
     class Search
     {
+        #region getSearch
         public static void getSearch(string choice, IList<Person> personList)
         {
             string search = "";
@@ -63,6 +64,8 @@ namespace InformationSystem
                 displayList(searchResult);
             }
         }
+        #endregion
+        #region displayList
         private static void displayList(IEnumerable<Person> searchResult)
         {
             foreach (var list in searchResult)
@@ -78,7 +81,8 @@ namespace InformationSystem
                 Console.WriteLine("{0} is {1} years old and is a {2}", list.name, list.age, list.gender);
             }
         }
-
+        #endregion
+        #region getSearchValue
         private static string getSearchValue(string search2)
         {
             Console.Write("Input search: ");
@@ -97,5 +101,6 @@ namespace InformationSystem
             }
             return search;
         }
+        #endregion
     }
 }
