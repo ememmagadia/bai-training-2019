@@ -3,7 +3,6 @@ C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\bin\Debug\netcoreap
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\bin\Debug\netcoreapp2.1\InfoSystem.runtimeconfig.dev.json
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\bin\Debug\netcoreapp2.1\InfoSystem.dll
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\bin\Debug\netcoreapp2.1\InfoSystem.pdb
-C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.csprojAssemblyReference.cache
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.csproj.CoreCompileInputs.cache
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.AssemblyInfoInputs.cache
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.AssemblyInfo.cs

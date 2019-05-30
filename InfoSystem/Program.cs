@@ -76,9 +76,7 @@ namespace InformationSystem
                     if (ans != "") { continue; }
                 }
 
-                Console.WriteLine("What do you want to do? \n" +
-                    "*Get All <type a>  \n" +
-                    "*Search <type s>  \n");
+                Console.WriteLine("What do you want to do? \n *Get All <type a>  \n *Search <type s>  \n");
                 string input2 = Console.ReadLine();
                 input2.ToLower();
 
@@ -109,16 +107,20 @@ namespace InformationSystem
                 }
                 else if (input2 == "s")
                 {
-                    Console.WriteLine("Search by: ");
+                    Console.WriteLine("Search: ");
                     string input3 = Console.ReadLine();
+
+                    int age = 0;
+                    bool isInt = Int32.TryParse(input3, out age);
 
                     if (input is "person")
                     {
+                                      
                         var search = from p in people
-                                     where p.Name == input3 || p.Gender == input3 || p.Age == Convert.ToInt32(input3)
+                                     where p.Name.ToLower() == input3.ToLower() || p.Gender == input3.ToLower() || p.Age == age
                                      select p;
 
-                        Console.WriteLine("List of person with the same value you entered: ", input3);
+                        Console.WriteLine("List of person with the same value you entered: ");
                         foreach (var sa in search)
                         {
                             Console.WriteLine("Name: {0}, Age: {1}, Gender: {2}", sa.Name, sa.Age, sa.Gender);
@@ -128,10 +130,10 @@ namespace InformationSystem
                     if (input is "animal")
                     {
                         var search = from a in animals
-                                     where a.Name == input3 || a.Gender == input3 || a.Age == Convert.ToInt32(input3)
+                                     where a.Name == input3.ToLower() || a.Gender == input3.ToLower() || a.Age == age
                                      select a;
 
-                        Console.WriteLine("List of person with a of {0}:", input3);
+                        Console.WriteLine("List of person with the same value you entered: ");
                         foreach (var sa in search)
                         {
                             Console.WriteLine("Name: {0}, Age: {1}, Gender: {2}", sa.Name, sa.Age, sa.Gender);
