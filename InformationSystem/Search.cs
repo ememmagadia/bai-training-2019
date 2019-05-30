@@ -81,7 +81,7 @@ namespace InformationSystem
 
         private static string getSearchValue(string search2)
         {
-            Console.Write("Input search:");
+            Console.Write("Input search: ");
             search2 = Console.ReadLine();
             return search2;
         }
@@ -90,7 +90,7 @@ namespace InformationSystem
         {
             while (true)
             {
-                Console.WriteLine("Search name, age, or gender? (n/a/g)");
+                Console.Write("Search name, age, or gender? (n/a/g): ");
                 search = Console.ReadLine();
                 if (search == "a" || search == "n" || search == "g") break;
                 else Console.WriteLine("Invalid! Try Again!");

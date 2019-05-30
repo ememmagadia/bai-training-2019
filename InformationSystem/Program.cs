@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace InformationSystem
 {
@@ -12,26 +11,41 @@ namespace InformationSystem
             IList<Animal> animalList = addAnimalList();
             string choice = "";
             string choice2 = "";
-            choice = getPersonAnimal(choice);
-            choice2 = allOrSearch(choice2);
-
-            if (choice == "p" && choice2 == "g") displayList(personList);
-            else if (choice == "a" && choice2 == "g") displayList(animalList);
-            else
+            string again = "";
+            do
             {
-                if (choice == "p") Search.getSearch(choice, personList);
-                else if (choice == "a") Search.getSearch(choice, animalList);
+                choice = getPersonAnimal(choice);
+                choice2 = allOrSearch(choice2);
+
+                if (choice == "p" && choice2 == "g") displayList(personList);
+                else if (choice == "a" && choice2 == "g") displayList(animalList);
+                else
+                {
+                    if (choice == "p") Search.getSearch(choice, personList);
+                    else if (choice == "a") Search.getSearch(choice, animalList);
+                }
+                again = tryAgain(again);
             }
-            
+            while (again == "Y" || again == "y");
         }
 
-        
+        private static string tryAgain(string again)
+        {
+            while (true)
+            {
+                Console.Write("Do you want to try again? (Y/N): ");
+                again = Console.ReadLine();
+                if (again == "Y" || again == "y" || again == "N" || again == "n") break;
+                else Console.WriteLine("Invalid! Try Again!");
+            }
+            return again;
+        }
 
         private static string allOrSearch(string choice2)
         {
             while (true)
             {
-                Console.WriteLine("Get All or Search? (g/s)");
+                Console.Write("Get All or Search? (g/s): ");
                 choice2 = Console.ReadLine();
                 if (choice2 == "g" || choice2 == "s") break;
                 else Console.WriteLine("Invalid! Try Again!");
@@ -43,7 +57,7 @@ namespace InformationSystem
         {
             while (true)
             {
-                Console.WriteLine("Person or Animal? (p/a)");
+                Console.Write("Person or Animal? (p/a): ");
                 choice = Console.ReadLine();
                 if (choice == "a" || choice == "p") break;
                 else Console.WriteLine("Invalid! Try Again!");
