@@ -31,12 +31,48 @@ namespace Information_System
 		
 		public void toViewAll()
 		{
-			Console.WriteLine("Enter");
-			//var personlist = personList.OfType<Person>();
-			//foreach (var person in personlist)
-			//{
-			//	Console.WriteLine(person.Name, person.Age, person.Gender, person.Address);
-			//}
+
+			ArrayList personList = new ArrayList()
+					{
+						new Person
+						{
+							Name = "Juanita Tuft",
+							Age = 16,
+							Gender = "Female",
+							Address = "Mexico"
+
+						},
+						new Person
+						{
+							Name = "Hobert Rudnick",
+							Age = 20,
+							Gender = "Male",
+							Address = "Las vegas, Nevada"
+
+						},
+						new Person
+						{
+							Name = "Katrice Jonas",
+							Age = 23,
+							Gender = "Female",
+							Address = "Canada"
+
+						},
+						new Person
+						{
+							Name = "Nicholas Badillo",
+							Age = 19,
+							Gender = "Male",
+							Address = "New York"
+
+						}
+				};
+			var personlist = personList.OfType<Person>();
+			foreach (var person in personlist)
+			{
+				Console.WriteLine(person.Name, person.Age, person.Gender, person.Address);
+				Console.ReadKey();
+			}
 
 		}
 	}

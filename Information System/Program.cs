@@ -19,41 +19,7 @@ namespace Information_System
 			if(choice1 == "A")
 			{
 				Person person = new Person();
-				ArrayList personList = new ArrayList()
-					{
-						new Person
-						{
-							Name = "Juanita Tuft",
-							Age = 16,
-							Gender = "Female",
-							Address = "Mexico"
-
-						},
-						new Person
-						{
-							Name = "Hobert Rudnick",
-							Age = 20,
-							Gender = "Male",
-							Address = "Las vegas, Nevada"
-
-						},
-						new Person
-						{
-							Name = "Katrice Jonas",
-							Age = 23,
-							Gender = "Female",
-							Address = "Canada"
-
-						},
-						new Person
-						{
-							Name = "Nicholas Badillo",
-							Age = 19,
-							Gender = "Male",
-							Address = "New York"
-
-						}
-				};
+				
 				if (choice2 == "A")
 				{
 					person.toViewAll();
