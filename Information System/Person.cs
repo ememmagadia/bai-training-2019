@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace Information_System
 {
-	public class Person : IAction
+	public class Person
 	{
 
 		public string Name { get; set; }
@@ -23,57 +23,50 @@ namespace Information_System
 			Address = address;
 		}
 
-		public void toView()
+		public void toView(ArrayList personList, string item, string choice)
 		{
+			var personListenum = personList.OfType<Person>();
+			switch(choice)
+			{
+				case "A":
+					var result = from person in personListenum where person.Name == item select person;
+					foreach (var person in result)
+					{
+						Console.WriteLine("Name : {0}\nAge : {1}\nGender : {2}\nAddress : {3}", person.Name, person.Age, person.Gender, person.Address);
+					}
+					Console.ReadKey();
+					break;
+				case "B":
+					int item1 = Convert.ToInt32(item);
+					result = from person in personListenum where person.Age == item1 select person;
+					foreach (var person in result)
+					{
+						Console.WriteLine("Name : {0}\nAge : {1}\nGender : {2}\nAddress : {3}", person.Name, person.Age, person.Gender, person.Address);
+					}
+					Console.ReadKey();
+					break;
+				case "C":
+					result = from person in personListenum where person.Gender == item select person;
+					foreach (var person in result)
+					{
+						Console.WriteLine("Name : {0}\nAge : {1}\nGender : {2}\nAddress : {3}", person.Name, person.Age, person.Gender, person.Address);
+					}
+					Console.ReadKey();
+					break;
+			}
 
+			
 		}
 
 		
-		public void toViewAll()
+		public void toViewAll(ArrayList personList)
 		{
-
-			ArrayList personList = new ArrayList()
-					{
-						new Person
-						{
-							Name = "Juanita Tuft",
-							Age = 16,
-							Gender = "Female",
-							Address = "Mexico"
-
-						},
-						new Person
-						{
-							Name = "Hobert Rudnick",
-							Age = 20,
-							Gender = "Male",
-							Address = "Las vegas, Nevada"
-
-						},
-						new Person
-						{
-							Name = "Katrice Jonas",
-							Age = 23,
-							Gender = "Female",
-							Address = "Canada"
-
-						},
-						new Person
-						{
-							Name = "Nicholas Badillo",
-							Age = 19,
-							Gender = "Male",
-							Address = "New York"
-
-						}
-				};
 			var personlist = personList.OfType<Person>();
 			foreach (var person in personlist)
 			{
-				Console.WriteLine(person.Name, person.Age, person.Gender, person.Address);
-				Console.ReadKey();
+				Console.WriteLine("Name : {0}\nAge : {1}\nGender : {2}\nAddress : {3}", person.Name , person.Age , person.Gender , person.Address);
 			}
-
+			Console.ReadKey();
 		}
 	}
 }
