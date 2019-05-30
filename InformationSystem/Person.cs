@@ -8,7 +8,7 @@ namespace InformationSystem
     {
         public Person(string name = "No Name",
             int age = 0,
-            GenderList gender = GenderList.Undefined)
+            string gender = "Undefined")
         {
             Name = name;
             Gender = gender;
@@ -17,7 +17,7 @@ namespace InformationSystem
 
         public string Name { get; set; }
         public int Age { get; set; }
-        public GenderList Gender { get; set; }
+        public string Gender { get; set; }
     }
 
 }

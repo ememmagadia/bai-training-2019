@@ -25,19 +25,19 @@ namespace InformationSystem
             }
             while (true)
             {
-                Console.Write("What do you want to search by:\nName, Age, Gender : ");
+                Console.Write("What do you want to search by:\nName, Age, Gender or * to display all : ");
                 by = (Console.ReadLine()).ToLower();
                 if (by == "name" || by == "age"|| by == "gender")
                 {
-                    Console.Write("Enter search keyword: \nEnter * to display all");
+                    Console.Write("Enter search keyword: ");
                     string keyWord = Console.ReadLine();
                     switch (type)
                     {
                         case "animals":
-                            action.SearchAnimal(by, "");
+                            action.SearchAnimal(by, keyWord);
                             break;
                         case "person":
-                            action.SearchPerson(by, "");
+                            action.SearchPerson(by, keyWord);
                             break;
                         default:
                             break;

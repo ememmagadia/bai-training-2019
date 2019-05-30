@@ -66,7 +66,7 @@ namespace InformationSystem
                     break;
                 case "gender":
                     var GenderResult = from animal in Collection.animals
-                                       where animal.Name.Equals(SearchVal)
+                                       where animal.Gender.Equals(SearchVal)
                                        select new
                                        {
                                            animal.Name,
@@ -147,7 +147,7 @@ namespace InformationSystem
                     break;
                 case "gender":
                     var GenderResult = from person in Collection.person
-                                       where person.Name.Equals(SearchVal)
+                                       where person.Gender.Equals(SearchVal)
                                        select new
                                        {
                                            person.Name,

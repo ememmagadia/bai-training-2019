@@ -8,7 +8,7 @@ namespace InformationSystem
     {
         string Name { get; set; }
         int Age { get; set; }
-        GenderList Gender { get; set; }
+        string Gender { get; set; }
 
 
     }
