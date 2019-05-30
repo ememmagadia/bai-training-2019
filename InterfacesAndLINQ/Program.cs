@@ -6,7 +6,7 @@ namespace InterfacesAndLINQ
 {
     class Program
     {
-        IList<KantoPokes> box1 = new List<KantoPokes>()
+        public IList<KantoPokes> box1 = new List<KantoPokes>()
             {
                 new KantoPokes{Name="Bulbasaur",
                 DexNo="001", Type1 = "Grass", Type2 ="Poison"},
@@ -22,7 +22,7 @@ namespace InterfacesAndLINQ
                 DexNo="110", Type1 = "Poison"}
             };
 
-        IList<JohtoPokes> box2 = new List<JohtoPokes>()
+        public IList<JohtoPokes> box2 = new List<JohtoPokes>()
             {
                 new JohtoPokes{Name="Scizor",
                 DexNo="212", Type1 = "Bug", Type2 ="Steel"},
@@ -43,14 +43,20 @@ namespace InterfacesAndLINQ
             Program p = new Program();
 
             string Region = ChooseRegion();
-            //if (Region == "1")
-            //{
 
-                SearchBy(ChooseRegion());
-            //}
-            //else
+            SearchBy(Region);
+
+            //var result = from lol in p.box1
+            //             where lol.Name.Contains(haha)
+            //             select new
+            //             {
+            //                 lol.Name,
+            //                 lol.DexNo
+            //             };
+
+            //foreach (var i in result)
             //{
-            //    Console.WriteLine("2");
+            //    Console.WriteLine("{0} {1}",i.Name, i.DexNo);
             //}
 
             //foreach (KantoPokes i in p.box1)
@@ -84,7 +90,7 @@ namespace InterfacesAndLINQ
 
                 if (input == "1" || input == "2" || input == "3" || input == "4")
                 {
-                    Console.WriteLine(region + "" + input);
+                    //Console.WriteLine(region + "" + input);
                     return region + "" + input;
                 }
                 else
