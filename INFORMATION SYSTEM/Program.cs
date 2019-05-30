@@ -26,13 +26,13 @@ namespace INFORMATION_SYSTEM
                     String x = Console.ReadLine();
                     SP.byPersonName(x);
                 }
-                else if (category.Equals("1"))
+                else if (category.Equals("3"))
                 {
                     Console.WriteLine("What age are you looking for?\n");
                     String x = Console.ReadLine();
                     SP.byPersonAge(x);
                 }
-                else if (category.Equals("1"))
+                else if (category.Equals("4"))
                 {
                     Console.WriteLine("What age are you looking for?\n");
                     String x = Console.ReadLine();
@@ -55,13 +55,13 @@ namespace INFORMATION_SYSTEM
                     String x = Console.ReadLine();
                     SA.byAnimalName(x);
                 }
-                else if (category.Equals("1"))
+                else if (category.Equals("3"))
                 {
                     Console.WriteLine("What age are you looking for?\n");
                     String x = Console.ReadLine();
                     SA.byAnimalKind(x);
                 }
-                else if (category.Equals("1"))
+                else if (category.Equals("4"))
                 {
                     Console.WriteLine("What age are you looking for?\n");
                     String x = Console.ReadLine();
