@@ -8,3 +8,4 @@ C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreap
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.AssemblyInfo.cs
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.dll
 C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.pdb
+C:\Users\mmejidana\source\repos\bai-training-2019\InfoSystem\obj\Debug\netcoreapp2.1\InfoSystem.csprojAssemblyReference.cache

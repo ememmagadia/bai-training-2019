@@ -7,6 +7,7 @@ namespace InformationSystem
     interface IProperty
     {
         void GetAll();
+        void Search();
 
     }
 }
