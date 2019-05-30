@@ -65,7 +65,7 @@ namespace Calculator
             }
         }
 
-        static int GetInput(string order)
+        static double GetInput(string order)
         {
             Boolean Valid = false;
             while (!Valid)
@@ -73,7 +73,7 @@ namespace Calculator
                 Console.Write("Enter " + order + " number: ");
                 string input1 = Console.ReadLine();
 
-                if (Int32.TryParse(input1, out int num))
+                if (Double.TryParse(input1, out double num))
                 {
                     Valid = true;
                     return num;

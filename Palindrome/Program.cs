@@ -44,7 +44,7 @@ namespace Palindrome
                 a = ListOfPalindrome[i];
                 a = a.Replace(" ", String.Empty);
 
-                Console.Write("Word: "); Console.Write(a);
+                Console.Write("Word: "); Console.Write(ListOfPalindrome[i]);
                 Console.Write(" || "); Console.Write("Result: ");
                 Console.WriteLine(IsPalindrome(a));
             }
