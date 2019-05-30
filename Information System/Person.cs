@@ -49,7 +49,7 @@ namespace Information_System
 					result = from person in personListenum where person.Gender == item select person;
 					foreach (var person in result)
 					{
-						Console.WriteLine("Name : {0}\nAge : {1}\nGender : {2}\nAddress : {3}", person.Name, person.Age, person.Gender, person.Address);
+						Console.WriteLine("Name : {0}\nAge : {1}\nGender : {2}\nAddress : {3}\n", person.Name, person.Age, person.Gender, person.Address);
 					}
 					Console.ReadKey();
 					break;
