@@ -97,7 +97,7 @@ namespace INFORMATION_SYSTEM
             {
 
                 var personz = from person in persons
-                              where person.Age.Equals(x)
+                              where person.Age.Contains(x)
                               select new
                               {
                                   person.Name,
