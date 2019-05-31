@@ -9,17 +9,25 @@ namespace InterfacesAndLINQ
         public IList<KantoPokes> box1 = new List<KantoPokes>()
             {
                 new KantoPokes{Name="Bulbasaur",
-                DexNo="001", Type1 = "Grass", Type2 ="Poison"},
+                DexNo="001", Type1 ="Grass", Type2 ="Poison"},
                 new KantoPokes{Name="Onix",
                 DexNo="95", Type1 = "Rock", Type2 ="Ground"},
                 new KantoPokes{Name="Exeggutor",
-                DexNo="103", Type1 = "Grass", Type2 ="Psychic"},
+                DexNo="103", Type1 ="Grass", Type2 ="Psychic"},
                 new KantoPokes{Name="Porygon",
-                DexNo="137", Type1 = "Normal"},
+                DexNo="137", Type1 ="Normal"},
                 new KantoPokes{Name="Seadra",
-                DexNo="117", Type1 = "Water"},
+                DexNo="117", Type1 ="Water"},
                 new KantoPokes{Name="Weezing",
-                DexNo="110", Type1 = "Poison"}
+                DexNo="110", Type1 ="Poison"},
+                new KantoPokes{Name="Starmie",
+                DexNo="121", Type1 ="Water", Type2 ="Psychic"},
+                new KantoPokes{Name="Fearow",
+                DexNo="022", Type1 ="Normal", Type2 ="Flying"},
+                new KantoPokes{Name="Graveler",
+                DexNo="075", Type1 ="Rock", Type2 ="Ground"},
+                new KantoPokes{Name="Shellder",
+                DexNo="090", Type1 ="Water"}
             };
 
         public IList<JohtoPokes> box2 = new List<JohtoPokes>()
@@ -56,7 +64,7 @@ namespace InterfacesAndLINQ
             {
                 GetAll(p, true);
             }
-            if (Search == "24")
+            else if (Search == "24")
             {
                 GetAll(p, false);
             }
