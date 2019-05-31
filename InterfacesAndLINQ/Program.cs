@@ -53,47 +53,35 @@ namespace InterfacesAndLINQ
             {
                 var result = p.box1.Where(a => a.DexNo.Contains(Keywords));
 
-                foreach (var i in result)
-                {
-                    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
-                        i.DexNo, i.Name, i.Type1, i.Type2);
-                }
+                ExecSearch(p.box1);
             }
             if (Search == "12")
             {
                 var result = p.box1.Where(a => a.Name.Contains(Keywords));
 
-                foreach (var i in result)
-                {
-                    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
-                        i.DexNo, i.Name, i.Type1, i.Type2);
-                }
+                ExecSearch(p.box1);
             }
             if (Search == "13")
             {
                 var result = p.box1.Where(a => a.Type1.Contains(Keywords));
 
-                foreach (var i in result)
-                {
-                    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
-                        i.DexNo, i.Name, i.Type1, i.Type2);
-                }
+                ExecSearch(p.box1);
             }
             if (Search == "14")
             {
-
+                
             }
             if (Search == "21")
             {
-
+                ExecSearch(p.box1);
             }
             if (Search == "22")
             {
-
+                ExecSearch(p.box1);
             }
             if (Search == "23")
             {
-
+                ExecSearch(p.box1);
             }
             if (Search == "24")
             {
@@ -144,7 +132,6 @@ namespace InterfacesAndLINQ
                     i.DexNo, i.Name, i.Type1, i.Type2);
             }
         }
-
         static string Queries(Program p)
         {
             foreach (KantoPokes i in p.box1)
@@ -203,6 +190,22 @@ namespace InterfacesAndLINQ
         {
             Console.Write("Search: ");
             return Console.ReadLine();
+        }
+        static void ExecSearch(IList<KantoPokes> result)
+        {
+            foreach (var i in result)
+            {
+                Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                    i.DexNo, i.Name, i.Type1, i.Type2);
+            }
+        }
+        static void ExecSearch(IList<JohtoPokes> result)
+        {
+            foreach (var i in result)
+            {
+                Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                    i.DexNo, i.Name, i.Type1, i.Type2);
+            }
         }
     }
 }
