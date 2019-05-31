@@ -19,6 +19,10 @@ namespace CSharpBasics //namespace declarations,  namespace is a collection of c
 
 
             Console.ReadLine();
+            Console.ReadLine();
+            Console.ReadLine();
+            Console.ReadLine();
+
         }
     }
 }
