@@ -41,11 +41,66 @@ namespace InterfacesAndLINQ
         static void Main(string[] args)
         {
             Program p = new Program();
+           
 
             string Region = ChooseRegion();
 
-            SearchBy(Region);
+            string Search = SearchBy(Region);
 
+            string Keywords = GetSearchKeywords();
+
+            if (Search == "11")
+            {
+                var result = p.box1.Where(a => a.DexNo.Contains(Keywords));
+
+                foreach (var i in result)
+                {
+                    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                        i.DexNo, i.Name, i.Type1, i.Type2);
+                }
+            }
+            if (Search == "12")
+            {
+                var result = p.box1.Where(a => a.Name.Contains(Keywords));
+
+                foreach (var i in result)
+                {
+                    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                        i.DexNo, i.Name, i.Type1, i.Type2);
+                }
+            }
+            if (Search == "13")
+            {
+                var result = p.box1.Where(a => a.Type1.Contains(Keywords));
+
+                foreach (var i in result)
+                {
+                    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                        i.DexNo, i.Name, i.Type1, i.Type2);
+                }
+            }
+            if (Search == "14")
+            {
+
+            }
+            if (Search == "21")
+            {
+
+            }
+            if (Search == "22")
+            {
+
+            }
+            if (Search == "23")
+            {
+
+            }
+            if (Search == "24")
+            {
+
+            }
+            //GetAll(p);
+            #region SampleQuery
             //var result = from lol in p.box1
             //             where lol.Name.Contains(haha)
             //             select new
@@ -57,34 +112,56 @@ namespace InterfacesAndLINQ
             //foreach (var i in result)
             //{
             //    Console.WriteLine("{0} {1}",i.Name, i.DexNo);
-            //}
+            //} 
+            #endregion
 
+            #region GetAll
             //foreach (KantoPokes i in p.box1)
             //{
             //    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
             //        i.DexNo, i.Name, i.Type1, i.Type2);
             //}
 
-            //foreach (JohtoPokes i in box2)
+            //foreach (JohtoPokes i in p.box2)
             //{
             //    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
             //        i.DexNo, i.Name, i.Type1, i.Type2);
-            //}
+            //} 
+            #endregion
         }
 
-        static void GetAll()
+        static void GetAll(Program p)
         {
+            foreach (KantoPokes i in p.box1)
+            {
+                Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                    i.DexNo, i.Name, i.Type1, i.Type2);
+            }
 
+            foreach (JohtoPokes i in p.box2)
+            {
+                Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                    i.DexNo, i.Name, i.Type1, i.Type2);
+            }
         }
 
+        static string Queries(Program p)
+        {
+            foreach (KantoPokes i in p.box1)
+            {
+                Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
+                    i.DexNo, i.Name, i.Type1, i.Type2);
+            }
+            return "1";
+        }
         static string SearchBy(string region)
         {
             string input;
             while (true)
             {
                 Console.WriteLine("Search by:");
-                Console.WriteLine("[1] DexNo, [2] Name, [3] Name, [4] List all");
-                Console.Write(">>");
+                Console.WriteLine("[1] DexNo, [2] Name, [3] Type, [4] List all");
+                Console.Write(">>  ");
 
                 input = Console.ReadLine();
 
@@ -107,7 +184,7 @@ namespace InterfacesAndLINQ
             {
                 Console.WriteLine("Choose a region:");
                 Console.WriteLine("[1] Kanto, [2] Johto");
-                Console.Write(">>");
+                Console.Write(">>  ");
 
                 input = Console.ReadLine();
 
@@ -121,6 +198,11 @@ namespace InterfacesAndLINQ
                 }
 
             }
+        }
+        static string GetSearchKeywords()
+        {
+            Console.Write("Search: ");
+            return Console.ReadLine();
         }
     }
 }
