@@ -51,21 +51,18 @@ namespace InterfacesAndLINQ
 
             if (Search == "11")
             {
-                var result = p.box1.Where(a => a.DexNo.Contains(Keywords));
-
+                IEnumerable<KantoPokes> result = p.box1.Where(a => a.DexNo.Contains(Keywords));
                 ExecSearch(p.box1);
             }
             if (Search == "12")
             {
-                var result = p.box1.Where(a => a.Name.Contains(Keywords));
-
+                IEnumerable<KantoPokes> result = p.box1.Where(a => a.Name.Contains(Keywords));
                 ExecSearch(p.box1);
             }
             if (Search == "13")
             {
-                var result = p.box1.Where(a => a.Type1.Contains(Keywords));
-
-                ExecSearch(p.box1);
+                IEnumerable<KantoPokes> result = p.box1.Where(a => a.Type1.Contains(Keywords));
+                ExecSearch(result);
             }
             if (Search == "14")
             {
@@ -73,49 +70,25 @@ namespace InterfacesAndLINQ
             }
             if (Search == "21")
             {
-                ExecSearch(p.box1);
+                IEnumerable<JohtoPokes> result = p.box2.Where(a => a.DexNo.Contains(Keywords));
+                ExecSearch(p.box2);
             }
             if (Search == "22")
             {
-                ExecSearch(p.box1);
+                IEnumerable<JohtoPokes> result = p.box2.Where(a => a.DexNo.Contains(Keywords));
+                ExecSearch(p.box2);
             }
             if (Search == "23")
             {
-                ExecSearch(p.box1);
+                IEnumerable<JohtoPokes> result = p.box2.Where(a => a.DexNo.Contains(Keywords));
+                ExecSearch(p.box2);
             }
             if (Search == "24")
             {
 
             }
             //GetAll(p);
-            #region SampleQuery
-            //var result = from lol in p.box1
-            //             where lol.Name.Contains(haha)
-            //             select new
-            //             {
-            //                 lol.Name,
-            //                 lol.DexNo
-            //             };
 
-            //foreach (var i in result)
-            //{
-            //    Console.WriteLine("{0} {1}",i.Name, i.DexNo);
-            //} 
-            #endregion
-
-            #region GetAll
-            //foreach (KantoPokes i in p.box1)
-            //{
-            //    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
-            //        i.DexNo, i.Name, i.Type1, i.Type2);
-            //}
-
-            //foreach (JohtoPokes i in p.box2)
-            //{
-            //    Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
-            //        i.DexNo, i.Name, i.Type1, i.Type2);
-            //} 
-            #endregion
         }
 
         static void GetAll(Program p)
@@ -191,7 +164,7 @@ namespace InterfacesAndLINQ
             Console.Write("Search: ");
             return Console.ReadLine();
         }
-        static void ExecSearch(IList<KantoPokes> result)
+        static void ExecSearch(IEnumerable<KantoPokes> result)
         {
             foreach (var i in result)
             {
