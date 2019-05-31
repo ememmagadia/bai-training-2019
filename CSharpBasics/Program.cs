@@ -16,10 +16,6 @@ namespace CSharpBasics //namespace declarations,  namespace is a collection of c
 
             //fb.GetFoobar(num);
 
-            //fb.GetNestedFoobar(num);
-            //fb.GetNestedFoobar(num);
-
-            //fb.GetNestedFoobar(num);
 
 
             Console.ReadLine();
