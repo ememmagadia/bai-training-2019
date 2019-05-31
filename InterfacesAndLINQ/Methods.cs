@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace InterfacesAndLINQ
 {
@@ -22,7 +21,7 @@ namespace InterfacesAndLINQ
                 Console.WriteLine("Dex no.: {0}\t\tName: {1}\t\t\tType: {2} {3}",
                     i.DexNo, i.Name, i.Type1, i.Type2);
             }
-        } 
+        }
         #endregion
         protected static void GetAll(Program p, Boolean kanto)
         {
