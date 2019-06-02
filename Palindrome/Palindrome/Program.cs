@@ -39,6 +39,8 @@ namespace Palindrome
             ListOfPalindrome.Add("Race caR");
             ListOfPalindrome.Add("RaCe CaR");
             ListOfPalindrome.Add("rAce caR");
+            ListOfPalindrome.Add("a man a palan a canal panama");
+            ListOfPalindrome.Add("A man a palan a canal panama");
 
             foreach (string palindrome in ListOfPalindrome)
             {
@@ -47,40 +49,39 @@ namespace Palindrome
             }
 
         }
-
-    
-    public static bool CheckPalindrome(string palindrome)
-    {
-
-        int i = 0;
-        int j = palindrome.Length - 1;
-
-
-        while (true)
+        public static bool CheckPalindrome(string palindrome)
         {
-            if (i > j)
+            int palLength = palindrome.Length;
+
+            while (true)
             {
-                return true;
-            }
-            char check1 = palindrome[i];
-            char check2 = palindrome[j];
-
-            if (palindrome[i] == palindrome[j] - i - 1)
+                for (int i = 0; i <= palLength / 2; i++)
                 {
-                    if  (palindrome[i] != palindrome[j])
-                    { 
-                            return false;
-                    }
 
+                    if (palindrome[i] != palindrome[palLength - i - 1])
+                    {
+
+                        return false;
+
+                    }
+                    
+                    return true;
+
+                   
                 }
-                i++;
-                j--;
+
 
             }
-                
+
+
+
         }
     }
 }
+
+
+
+
 
 
 
